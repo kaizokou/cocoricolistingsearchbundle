@@ -1,10 +1,9 @@
 {
-  "name": "cocorico/listing-search-bundle",
-  "license": "Proprietary",
+  "name": "kaizokou/cocoricolistingsearchbundle",
+  "license": "up-to-you",
   "type": "symfony-bundle",
-  "description": "Cocorico Search Bundle",
+  "description": "Cocorico Search Bundle - clone",
   "keywords": ["search"],
-  "homepage": "http://cocorico.io",
   "version": "0.2.2",
   "authors": [
     {
@@ -12,9 +11,6 @@
       "email": "support@cocorico.io"
     }
   ],
-  "support": {
-    "email": "support@cocorico.io"
-  },
   "autoload": {
     "psr-4": {
       "Cocorico\\ListingSearchBundle\\": ""
