@@ -1,0 +1,34 @@
+imports:
+    - { resource: "subscribers.yml" }
+    - { resource: "entities_manager.yml" }
+    - { resource: "twig_extensions.yml" }
+
+parameters:
+    #Listing notation criteria weights with in comments max related value
+    cocorico_listing_search.notation_weights:
+       listing_admin_notation: 5 #1
+       listing_fill_rate: 4 #1
+       listing_avg_rating: 5 #1
+       listing_availabilities_updated: 4 #1
+       listing_last_bookings: 4 #1
+       listing_certified: 4 #1
+       listing_new_bonus: 3 #1
+       listing_random_bonus: 2 #1
+       offerer_fill_rate: 3 #1
+       offerer_answers_rate: 4 #1
+       offerer_acceptation_rate: 4 #1
+       offerer_nb_bank_wires: 4 #1
+       offerer_answers_delay: 3 #1
+
+    #Listing location search type
+    cocorico_listing_search.location_type: 'distance' #distance or viewport
+
+    #Distance viewport divisions in which listings locations are grouped: array(distance viewport => nb divisions)
+    cocorico_listing_search.distance_viewport_divisions:
+        1: 1
+        10: 4
+        50: 6
+        40000: 8
+
+    #Max distance in which the search is done (in km)
+    cocorico_listing_search.max_distance: 2000

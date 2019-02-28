@@ -1,0 +1,8 @@
+services:
+    #Twig extensions
+    cocorico_listing_search.twig.cocorico_listing_search_extension:
+        class: Cocorico\ListingSearchBundle\Twig\ListingSearchExtension
+        arguments:
+            - "%cocorico_listing_search.location_type%"
+        tags:
+            - { name: twig.extension }

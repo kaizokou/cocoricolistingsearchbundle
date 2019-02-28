@@ -1,0 +1,27 @@
+{
+  "name": "cocorico/listing-search-bundle",
+  "license": "Proprietary",
+  "type": "symfony-bundle",
+  "description": "Cocorico Search Bundle",
+  "keywords": ["search"],
+  "homepage": "http://cocorico.io",
+  "version": "0.2.2",
+  "authors": [
+    {
+      "name": "Cocolabs SAS",
+      "email": "support@cocorico.io"
+    }
+  ],
+  "support": {
+    "email": "support@cocorico.io"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cocorico\\ListingSearchBundle\\": ""
+    }
+  },
+  "require": {
+    "php": ">=5.3.9",
+    "symfony/framework-bundle": "2.8.*"
+  }
+}

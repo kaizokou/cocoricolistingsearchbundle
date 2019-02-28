@@ -1,0 +1,8 @@
+services:
+    #Entities manager
+    cocorico_listing_search.manager:
+        class: Cocorico\ListingSearchBundle\Model\Manager\ListingSearchManager
+        arguments:
+            - "@doctrine.orm.entity_manager"
+            - "@cocorico_message.thread_manager"
+            - "%cocorico_listing_search.notation_weights%"

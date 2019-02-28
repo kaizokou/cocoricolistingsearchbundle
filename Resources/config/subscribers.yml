@@ -1,0 +1,14 @@
+services:
+    #Listing Search Subscriber
+    cocorico_listing_search.search.subscriber:
+        class: Cocorico\ListingSearchBundle\Event\ListingSearchSubscriber
+        arguments:
+            - "@cocorico.listing_search.manager"
+            - parameters:
+                cocorico_listing_search_location_type: "%cocorico_listing_search.location_type%"
+                cocorico_listing_search_distance_viewport_divisions: "%cocorico_listing_search.distance_viewport_divisions%"
+                cocorico_listing_search_max_distance: "%cocorico_listing_search.max_distance%"
+                cocorico_listing_search_max_distance: "%cocorico_listing_search.max_distance%"
+                cocorico_listing_search_min_result: "%cocorico.listing_search_min_result%"
+        tags:
+            - { name: kernel.event_subscriber}
